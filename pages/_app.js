@@ -100,7 +100,9 @@ function App() {
             pause timer
           </button>
         </div>
-        <div className="App-footer">made by khaled ali</div>
+        <div className="App-footer">
+          made by <a href="http://github.com/khaledaylii">@khaledaylii</a>
+        </div>
       </header>
     </div>
   );
