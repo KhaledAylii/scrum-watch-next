@@ -2,6 +2,7 @@ import "../styles/globals.css";
 
 import { createRef, useEffect, useState } from "react";
 import "../styles/App.css";
+import Head from "next/head";
 
 function App() {
   const [secondsLeft, setSecondsLeft] = useState(0);
@@ -66,6 +67,10 @@ function App() {
 
   return (
     <div className="App">
+      <Head>
+        <title>Scrum watch</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <header className="App-header">
         Scrum Watch
         <input
@@ -95,6 +100,7 @@ function App() {
             pause timer
           </button>
         </div>
+        <div className="App-footer">made by khaled ali</div>
       </header>
     </div>
   );

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100vw;
 }
 
 .App-logo {
@@ -14,14 +15,17 @@
 }
 
 .App-header {
+  padding-top: 20px;
   background-color: #282c34;
   min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
 }
 
 .App-link {
@@ -53,7 +57,8 @@
 .button-container {
   display: flex;
   flex-direction: row;
-  column-gap: 32px;
+  gap: 32px;
+  margin-bottom: 50px;
 }
 
 .button-container > button {
@@ -82,4 +87,16 @@
 .button-container > button:disabled {
   color: gray !important;
   border-color: gray !important;
+}
+
+.App-footer {
+  position: absolute;
+  bottom: 16px;
+  font-size: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+  }
 }
