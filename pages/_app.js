@@ -59,7 +59,10 @@ function App() {
         setSecondsLeft(secondsLeft - 1);
       }, 1000);
     } else if (secondsLeft === 0 && timerStarted) {
+      // timer ended
       pauseTimer();
+      const audio = new Audio("ticking.wav");
+      audio.play();
     }
   }, [timerStarted, secondsLeft, timer]);
 
