@@ -101,7 +101,10 @@ function App() {
           </button>
         </div>
         <div className="App-footer">
-          made by <a href="http://github.com/khaledaylii">@khaledaylii</a>
+          made by{" "}
+          <a href="http://github.com/khaledaylii" target={"_blank"}>
+            @khaledaylii
+          </a>
         </div>
       </header>
     </div>
